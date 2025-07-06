@@ -1,0 +1,239 @@
+/* UltrixHil Custom Gaming Color Palette */
+:root {
+    /* Neón/Cyan Colors */
+    --neon-cyan: #00ffff;
+    --neon-cyan-glow: #00ffff80;
+    --neon-cyan-dark: #00d9d9;
+    
+    /* Blue Colors */
+    --gaming-blue: #0066ff;
+    --gaming-blue-dark: #0052cc;
+    --gaming-blue-light: #3385ff;
+    
+    /* Purple Colors */
+    --gaming-purple: #6600cc;
+    --gaming-purple-dark: #5200a3;
+    --gaming-purple-light: #8533d9;
+    
+    /* Fire Red Colors */
+    --fire-red: #ff0066;
+    --fire-red-dark: #cc0052;
+    --fire-red-light: #ff3385;
+    
+    /* Gradients */
+    --gradient-neon: linear-gradient(135deg, var(--neon-cyan), var(--gaming-blue));
+    --gradient-fire: linear-gradient(135deg, var(--fire-red), var(--gaming-purple));
+    --gradient-cosmic: linear-gradient(135deg, var(--gaming-purple), var(--gaming-blue), var(--neon-cyan));
+}
+
+/* Hero Section Customization */
+.chy-hero-4-area {
+    background: var(--gradient-cosmic);
+    position: relative;
+    overflow: hidden;
+}
+
+.chy-hero-4-area::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: radial-gradient(circle at 20% 80%, var(--neon-cyan-glow) 0%, transparent 50%),
+                radial-gradient(circle at 80% 20%, var(--fire-red)33 0%, transparent 50%);
+    z-index: 1;
+}
+
+.chy-hero-4-content {
+    position: relative;
+    z-index: 2;
+}
+
+/* Primary Buttons */
+.chy-pr-btn-5 {
+    background: var(--gradient-fire) !important;
+    border: 2px solid var(--neon-cyan) !important;
+    box-shadow: 0 0 20px var(--neon-cyan-glow) !important;
+    transition: all 0.3s ease !important;
+}
+
+.chy-pr-btn-5:hover {
+    background: var(--gradient-neon) !important;
+    box-shadow: 0 0 30px var(--neon-cyan) !important;
+    transform: translateY(-2px) !important;
+}
+
+/* Titles and Headings */
+.chy-title-4, .hero-title {
+    background: var(--gradient-neon) !important;
+    -webkit-background-clip: text !important;
+    -webkit-text-fill-color: transparent !important;
+    background-clip: text !important;
+    text-shadow: 0 0 20px var(--neon-cyan-glow) !important;
+}
+
+.chy-subtitle-4 {
+    color: var(--neon-cyan) !important;
+    text-shadow: 0 0 10px var(--neon-cyan-glow) !important;
+}
+
+/* Services Cards */
+.chy-services-5-item {
+    background: rgba(102, 0, 204, 0.1) !important;
+    border: 1px solid var(--gaming-purple) !important;
+    border-radius: 15px !important;
+    transition: all 0.3s ease !important;
+}
+
+.chy-services-5-item:hover {
+    background: rgba(0, 255, 255, 0.1) !important;
+    border-color: var(--neon-cyan) !important;
+    box-shadow: 0 10px 30px var(--neon-cyan-glow) !important;
+    transform: translateY(-10px) !important;
+}
+
+.chy-services-5-item .icon {
+    color: var(--neon-cyan) !important;
+    text-shadow: 0 0 15px var(--neon-cyan-glow) !important;
+}
+
+/* About Section */
+.chy-about-4-feature-item {
+    background: rgba(255, 0, 102, 0.1) !important;
+    border-left: 4px solid var(--fire-red) !important;
+    border-radius: 10px !important;
+    padding: 25px !important;
+    margin-bottom: 20px !important;
+}
+
+.chy-about-4-feature-item .icon {
+    color: var(--fire-red) !important;
+    text-shadow: 0 0 15px var(--fire-red-light) !important;
+}
+
+/* Footer */
+.chy-footer-4-area {
+    background: linear-gradient(135deg, #1a1a2e 0%, #16213e 50%, #0f3460 100%) !important;
+    border-top: 3px solid var(--neon-cyan) !important;
+}
+
+.chy-footer-4-widget-title {
+    color: var(--neon-cyan) !important;
+    text-shadow: 0 0 10px var(--neon-cyan-glow) !important;
+}
+
+.chy-footer-4-menu a {
+    color: #ffffff !important;
+    transition: all 0.3s ease !important;
+}
+
+.chy-footer-4-menu a:hover {
+    color: var(--neon-cyan) !important;
+    text-shadow: 0 0 10px var(--neon-cyan-glow) !important;
+}
+
+/* Blog Section */
+.chy-blog-4-item {
+    background: rgba(0, 102, 255, 0.1) !important;
+    border: 1px solid var(--gaming-blue) !important;
+    border-radius: 15px !important;
+    overflow: hidden !important;
+    transition: all 0.3s ease !important;
+}
+
+.chy-blog-4-item:hover {
+    border-color: var(--neon-cyan) !important;
+    box-shadow: 0 15px 40px var(--gaming-blue)40 !important;
+    transform: translateY(-5px) !important;
+}
+
+.chy-blog-4-item .subtitle {
+    color: var(--fire-red) !important;
+    text-transform: uppercase !important;
+    font-weight: bold !important;
+}
+
+/* Brand Logo Counter */
+.chy-brand-logo-4-counter .number {
+    background: var(--gradient-fire) !important;
+    -webkit-background-clip: text !important;
+    -webkit-text-fill-color: transparent !important;
+    background-clip: text !important;
+}
+
+/* Navigation */
+.chy-main-menu-1 ul li a {
+    color: #ffffff !important;
+    transition: all 0.3s ease !important;
+}
+
+.chy-main-menu-1 ul li a:hover,
+.chy-main-menu-1 ul li a.active {
+    color: var(--neon-cyan) !important;
+    text-shadow: 0 0 10px var(--neon-cyan-glow) !important;
+}
+
+/* Glowing Effects */
+.glow-effect {
+    animation: glow 2s ease-in-out infinite alternate;
+}
+
+@keyframes glow {
+    from {
+        box-shadow: 0 0 20px var(--neon-cyan-glow);
+    }
+    to {
+        box-shadow: 0 0 30px var(--neon-cyan), 0 0 40px var(--neon-cyan);
+    }
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .chy-hero-4-area::before {
+        opacity: 0.5;
+    }
+    
+    .chy-title-4, .hero-title {
+        font-size: 2rem !important;
+    }
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background: #1a1a2e;
+}
+
+::-webkit-scrollbar-thumb {
+    background: var(--gradient-neon);
+    border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: var(--gradient-fire);
+}
+
+/* Particle Effects (Optional) */
+.particle-effect {
+    position: absolute;
+    width: 2px;
+    height: 2px;
+    background: var(--neon-cyan);
+    border-radius: 50%;
+    animation: particle-float 3s ease-in-out infinite;
+}
+
+@keyframes particle-float {
+    0%, 100% {
+        transform: translateY(0px);
+        opacity: 1;
+    }
+    50% {
+        transform: translateY(-20px);
+        opacity: 0.5;
+    }
+} 
