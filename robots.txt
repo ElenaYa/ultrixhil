@@ -1,7 +1,7 @@
 User-agent: *
 Allow: /
 
-Allow: /index.html
+Allow: /
 Allow: /sobre-el-estudio.html
 Allow: /proyectos.html
 Allow: /equipo.html
