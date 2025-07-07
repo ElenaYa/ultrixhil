@@ -152,15 +152,6 @@ function user(): array {
 
                 <div class="chy-header-4-action-button">
 
-                    <div class="chy-call-1-btn-wrap">
-                        <a aria-label="link" href="tel:+541147890123" class="chy-call-2-icon">
-                            <i class="flaticon-call"></i>
-                        </a>
-                        <div class="chy-call-1-content">
-                           <span class="text chy-heading-2">Contactanos</span>
-                            <a class="phone chy-heading-2" href="tel:+541147890123">+54 11 4789 0123</a>
-                        </div>
-                    </div>
 
                     <div class="chy-menu-btn-1 open_mobile_menu d-lg-none" id="menuToggle">
                         <i class="fa-light fa-bars icon-1"></i>
@@ -325,21 +316,6 @@ function user(): array {
 
                 </div>
 
-                <ul  class="chy-hero-4-social">
-                    <li class="text">REDES SOCIALES</li>
-                    <li>
-                        <a aria-label="social link" href="#"><i class="fab fa-facebook"></i></a>
-                    </li>
-                    <li>
-                        <a aria-label="social link" href="#"><i class="fab fa-youtube"></i></a>
-                    </li>
-                    <li>
-                        <a aria-label="social link" href="#"><i class="flaticon-twitter"></i></a>
-                    </li>
-                    <li>
-                        <a aria-label="social link" href="#"><i class="fab fa-pinterest"></i></a>
-                    </li>
-                </ul>
 
                 <div class="chy-hero-4-scroll-btn-wrap">
                     <span class="text">rotar hacia la parte inferior</span>
@@ -431,15 +407,7 @@ function user(): array {
                                         <i class="fa-solid fa-right-long"></i>
                                     </span>
                                 </a>
-                                <div class="chy-call-1-btn-wrap">
-                                    <a aria-label="link" href="mailto:info@ultrixhil.com" class="chy-call-2-icon">
-                                        <i class="flaticon-email"></i>
-                                    </a>
-                                    <div class="chy-call-1-content">
-                                       <span class="text chy-heading-2">Email</span>
-                                        <a class="phone chy-heading-2" href="mailto:info@ultrixhil.com">info@ultrixhil.com</a>
-                                    </div>
-                                </div>
+                               
                             </div>
                         </div>
                     </div>
