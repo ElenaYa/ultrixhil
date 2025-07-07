@@ -6,6 +6,7 @@
         <title>UltrixHil - Estudio de Desarrollo de Juegos Móviles en Argentina</title>
         <meta name="description" content="Estudio de desarrollo de juegos móviles en Argentina. Creamos experiencias interactivas únicas y adictivas para dispositivos móviles. Regístrate y descubre el costo de tu proyecto soñado.">
         <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="robots" content="index, follow">
 		<link rel="shortcut icon" type="image/x-icon" href="assets/img/favicon.png">
         <!-- Place favicon.ico in the root directory -->
 
@@ -854,13 +855,24 @@
         document.addEventListener('DOMContentLoaded', function() {
           var banner = document.getElementById('cookie-consent-banner');
           var btn = document.getElementById('cookie-accept-btn');
-          if (!localStorage.getItem('cookieConsent')) {
-            banner.style.display = 'block';
+          
+          // Проверяем, есть ли уже согласие
+          var hasConsent = localStorage.getItem('cookieConsent');
+          
+          if (!hasConsent) {
+            if (banner) {
+              banner.style.display = 'block';
+            }
           }
-          btn.addEventListener('click', function() {
-            localStorage.setItem('cookieConsent', 'accepted');
-            banner.style.display = 'none';
-          });
+          
+          if (btn) {
+            btn.addEventListener('click', function() {
+              localStorage.setItem('cookieConsent', 'accepted');
+              if (banner) {
+                banner.style.display = 'none';
+              }
+            });
+          }
         });
         </script>
 
@@ -901,10 +913,7 @@
 
                 setActiveNavigation();
             });
-            document.querySelector('.chy-hero-4-scroll-btn-wrap .icon').addEventListener('click', function(e) {
-     e.preventDefault();
-     window.scrollTo({ top: window.innerHeight, behavior: 'smooth' });
-   });
+
         </script>
     </body>
 </html>

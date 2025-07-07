@@ -485,10 +485,12 @@ document.addEventListener('DOMContentLoaded', function() {
   if (!localStorage.getItem('cookieConsent')) {
     banner.style.display = 'block';
   }
-  btn.addEventListener('click', function() {
-    localStorage.setItem('cookieConsent', 'accepted');
-    banner.style.display = 'none';
-  });
+  if (btn) {
+    btn.addEventListener('click', function() {
+      localStorage.setItem('cookieConsent', 'accepted');
+      banner.style.display = 'none';
+    });
+  }
 });
 </script>
     </body>

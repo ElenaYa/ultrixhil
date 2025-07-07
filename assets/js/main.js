@@ -433,29 +433,11 @@ $("[data-background]").each(function(){
 $("[data-width]").each(function(){
 	$(this).css("width",$(this).attr("data-width"))
 })
-/*
-data-width-activition
-====end====
-*/
 
-/*
-data-bg-color-activition
-====start====
-*/
 $("[data-bg-color]").each(function(){
 	$(this).css("background-color",$(this).attr("data-bg-color"))
 })
-/*
-data-bg-color-activition
-====end====
-*/
 
-
-
-/*
-add-class
-====start====
-*/
 
 
 $(window).on('load',function(){
@@ -477,16 +459,6 @@ $(window).on('load',function(){
 
 
 
-
-/*
-add-class
-====end====
-*/
-
-/*
-gsap-animation
-====start====
-*/
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -529,7 +501,6 @@ gsap.utils.toArray(' .asslideupcta').forEach((el, index) => {
 
   
 
-// For each images with class "animate-image" on page
 gsap.utils.toArray('.rotatedscal').forEach((el, index) => { 
 	let tl3 = gsap.timeline({
 	  scrollTrigger: {
@@ -547,7 +518,6 @@ gsap.utils.toArray('.rotatedscal').forEach((el, index) => {
 	.from(el, { opacity: 1, rotateZ: 45, scale: 0.5, y: "+=100"}, {opacity: 1,  rotateZ: 0, scale: 1, y: 0, duration: 1, immediateRender: false})
   })
 
-// For each images with class "animate-image" on page
 gsap.utils.toArray('.chy-slideinleft').forEach((el, index) => { 
 	let tl3 = gsap.timeline({
 	  scrollTrigger: {
@@ -565,7 +535,6 @@ gsap.utils.toArray('.chy-slideinleft').forEach((el, index) => {
 	.from(el, { x: "-=100"}, { x:0, duration: 1, immediateRender: false})
   })
 
-// For each images with class "animate-image" on page
 gsap.utils.toArray('.chy-slideinright').forEach((el, index) => { 
 	let tl4 = gsap.timeline({
 	  scrollTrigger: {
@@ -583,7 +552,6 @@ gsap.utils.toArray('.chy-slideinright').forEach((el, index) => {
 	.from(el, { x: "+=100"}, { x:0, duration: 1, immediateRender: false})
   })
 
-// For each images with class "animate-image" on page
 gsap.utils.toArray('.chy-slideinup').forEach((el, index) => { 
 	let tl4 = gsap.timeline({
 	  scrollTrigger: {
@@ -601,7 +569,6 @@ gsap.utils.toArray('.chy-slideinup').forEach((el, index) => {
 	.from(el, { y: "+=100"}, { y:0, duration: 1, immediateRender: false})
   })
 
-// For each images with class "animate-image" on page
 gsap.utils.toArray('.chy-zoomout').forEach((el, index) => { 
 	let tl6 = gsap.timeline({
 	  scrollTrigger: {
@@ -619,7 +586,6 @@ gsap.utils.toArray('.chy-zoomout').forEach((el, index) => {
 	.fromTo(el, { scale: 1}, { scale: 0, duration: 1, immediateRender: false})
   })
 
-// For each images with class "animate-image" on page
 gsap.utils.toArray('.chy-zoomout2').forEach((el, index) => { 
 	let tl6 = gsap.timeline({
 	  scrollTrigger: {
@@ -637,7 +603,6 @@ gsap.utils.toArray('.chy-zoomout2').forEach((el, index) => {
 	.fromTo(el, { scale: 2}, { scale: 1, duration: 1, immediateRender: false})
   })
 
-// For each images with class "animate-image" on page
 gsap.utils.toArray('.chy-zoomout3').forEach((el, index) => { 
 	let tl6 = gsap.timeline({
 	  scrollTrigger: {
@@ -655,7 +620,6 @@ gsap.utils.toArray('.chy-zoomout3').forEach((el, index) => {
 	.fromTo(el, { scale: 1.5}, { scale: 1, duration: 1, immediateRender: false})
   })
 
-// For each images with class "animate-image" on page
 gsap.utils.toArray('.chyf2cc').forEach((el, index) => { 
 	let tl6 = gsap.timeline({
 	  scrollTrigger: {
@@ -673,7 +637,6 @@ gsap.utils.toArray('.chyf2cc').forEach((el, index) => {
 	.fromTo(el, { color: "#FF4040"}, { color: "#fff", duration: 1, immediateRender: false})
   })
 
-// For each images with class "animate-image" on page
 gsap.utils.toArray('.chyt1cc').forEach((el, index) => { 
 	let tl6 = gsap.timeline({
 	  scrollTrigger: {
@@ -691,7 +654,6 @@ gsap.utils.toArray('.chyt1cc').forEach((el, index) => {
 	.fromTo(el, { backgroundColor: "#6733E8"}, { backgroundColor: "#EDDFFF", duration: 1, immediateRender: false})
   })
 
-// For each images with class "animate-image" on page
 gsap.utils.toArray('.chyroted').forEach((el, index) => { 
 	let tl6 = gsap.timeline({
 	  scrollTrigger: {
@@ -709,7 +671,6 @@ gsap.utils.toArray('.chyroted').forEach((el, index) => {
 	.fromTo(el, { rotateZ: 360, }, { rotateZ: 0, duration: 1, immediateRender: false})
   })
 
-// For each images with class "animate-image" on page
 gsap.utils.toArray('.chyclip').forEach((el, index) => { 
 	let tl6 = gsap.timeline({
 	  scrollTrigger: {
@@ -727,7 +688,6 @@ gsap.utils.toArray('.chyclip').forEach((el, index) => {
 	.fromTo(el, { clipPath: "polygon(30% 0, 70% 0, 70% 100%, 30% 100%)" }, { clipPath: "polygon(0% 0, 100% 0, 100% 100%, 0% 100%)", duration: 1, immediateRender: false})
   })
 
-// For each images with class "animate-image" on page
 gsap.utils.toArray('.chyScl').forEach((el, index) => { 
 	let chyScl = gsap.timeline({
 	  scrollTrigger: {
@@ -745,7 +705,6 @@ gsap.utils.toArray('.chyScl').forEach((el, index) => {
 	.fromTo(el, { scale: .8 }, { scale: 1, duration: .5, immediateRender: false})
   })
 
-// For each images with class "animate-image" on page
 gsap.utils.toArray('.chy-about-4-img .bg-color').forEach((el, index) => { 
 	let chyScl = gsap.timeline({
 	  scrollTrigger: {
@@ -763,7 +722,6 @@ gsap.utils.toArray('.chy-about-4-img .bg-color').forEach((el, index) => {
 	.fromTo(el, { scale: 1.3 , backgroundColor: "#C8AEFF" }, { backgroundColor: "#F4EFFF", scale: 1, duration: .5, immediateRender: false})
   })
 
-// For each images with class "animate-image" on page
 gsap.utils.toArray('.chy-project-4-area .bg-img').forEach((el, index) => { 
 	let chyScl = gsap.timeline({
 	  scrollTrigger: {
@@ -781,7 +739,6 @@ gsap.utils.toArray('.chy-project-4-area .bg-img').forEach((el, index) => {
 	.fromTo(el, { xPercent: -100  }, { xPercent: 0, duration: .5, immediateRender: false})
   })
 
-// For each images with class "animate-image" on page
 gsap.utils.toArray('.chy-project-4-area .bg-color').forEach((el, index) => { 
 	let chyScl = gsap.timeline({
 	  scrollTrigger: {
@@ -800,7 +757,6 @@ gsap.utils.toArray('.chy-project-4-area .bg-color').forEach((el, index) => {
   })
 
 
-// For each images with class "animate-image" on page
 gsap.utils.toArray('.chy-solution-4-img .bg-color').forEach((el, index) => { 
 	let chyScl = gsap.timeline({
 	  scrollTrigger: {
@@ -838,7 +794,6 @@ gsap.utils.toArray('.chy-cta-5-area').forEach((el, index) => {
   })
 
 
-// For each images with class "animate-image" on pagefs
 gsap.utils.toArray('.chy-footer-4-il-img').forEach((el, index) => { 
 	let chyScl = gsap.timeline({
 	  scrollTrigger: {
@@ -860,11 +815,6 @@ gsap.utils.toArray('.chy-footer-4-il-img').forEach((el, index) => {
   
 
 
-
-/*
-gsap-animation
-====end====
-*/
 
 
 
@@ -929,19 +879,13 @@ menubgline.to('.fullpage-menu-close' , {
 menubgline.reverse();
 
 menuToggle.addEventListener('click', function(){
-	// menuBar.reversed(!menuBar.reversed());
 	menubgline.reversed(!menubgline.reversed());
 });
 
 menuToggle2.addEventListener('click', function(){
-	// menuBar.reversed(!menuBar.reversed());
 	menubgline.reversed(!menubgline.reversed());
 });
 
-/*
-title-animation
-====start====
-*/
 
 $(window).on('load',function(){
 	var st = $(".chy-split-text");
@@ -1072,15 +1016,6 @@ $(window).on('load',function(){
 })
 
 
-/*
-title-animation
-====end====
-*/
-
-
-/* 
-	hero-2-shape-moveing-start
-*/
 	gsap.set(".chy_price_1_next", {xPercent: -50, yPercent: -50});
 
 	let xSetter = gsap.quickSetter(".chy_price_1_next", "x", "px") //apply it to the #id element's x property and append a "px" unit
@@ -1091,15 +1026,6 @@ title-animation
 		ySetter(e.y)
 	});
 
-/* 
-	hero-2-shape-moveing-end
-*/
-
-
-/*
-knob-activition
-====start====
-*/
 if (typeof ($.fn.knob) != 'undefined') {
 	$('.knob').each(function () {
 		var $this = $(this),
@@ -1129,29 +1055,9 @@ if (typeof ($.fn.knob) != 'undefined') {
 		});
 	});
 }
-/*
-knob-activition
-====end====
-*/
 
-
-/*
-nice-selector-activiton
-====start====
-*/
 
 $('.nice-select select').niceSelect();
-/*
-nice-selector-activiton
-=====end==== 
-*/
-
-
-
-/*
-marquee-activiton
-====start====
-*/
 
 
   
@@ -1174,67 +1080,35 @@ $('.js-marquee-wrapper2').marquee({
 	pauseOnHover: true,
 	startVisible:true,
   })
-/*
-marquee-activiton
-=====end==== 
-*/
 
-
-/* 
- 	price-card-active-class-start
-*/
 $(".chy-price-card-1-item").on("mouseover", function(){
 	var current_class = document.getElementsByClassName("chy-price-card-1-item active");
 	current_class[0].className = current_class[0].className.replace(" active", "");
 	this.className += " active";
   });
 
-/* 
- 	price-card-active-end
 
-/* 
- 	chy-testimonial-3-item-active-class-start
-*/
 $(".chy-testimonial-3-item").on("mouseover", function(){
 	var current_class = document.getElementsByClassName("chy-testimonial-3-item active");
 	current_class[0].className = current_class[0].className.replace(" active", "");
 	this.className += " active";
   });
 
-/* 
- 	chy-testimonial-3-item-active-end
-*/
 
-/* 
- 	chy-price-3-item-active-class-start
-*/
 $(".chy-price-3-item").on("mouseover", function(){
 	var current_class = document.getElementsByClassName("chy-price-3-item active");
 	current_class[0].className = current_class[0].className.replace(" active", "");
 	this.className += " active";
   });
 
-/* 
- 	chy-price-3-item-active-end
-*/
 
-/* 
- 	chy-services-4-item -active-class-start
-*/
 $(".chy-services-4-item").on("mouseover", function(){
 	var current_class = document.getElementsByClassName("chy-services-4-item  active");
 	current_class[0].className = current_class[0].className.replace(" active", "");
 	this.className += " active";
   });
 
-/* 
- 	chy-services-4-item -active-end
-*/
 
-/*
-mouse-move-animation
-====start====
-*/
 
 document.addEventListener("mousemove" , parallax);
 function parallax(e){
@@ -1250,35 +1124,13 @@ function parallax(e){
 
 }
 
-/*
-mouse-move-animation
-====end====
-*/
-
-/*
-splitting-text
-====start====
-*/
-
-/*
-mouse-over-scale
-=====start=====
-*/
 
 $('.tilt_scale').tilt({
     glare: true,
     maxGlare: .5
 })
 
-/*
-mouse-over-scale
-=====end=====
-*/
 
-
-/*
-back-to-top
-=====start==== */
 var backtotop = $('.scroll-top');
 
 $(window).scroll(function() {
@@ -1293,23 +1145,9 @@ backtotop.on('click', function(e) {
 	e.preventDefault();
 	$('html, body').animate({scrollTop:0}, '700');
 });
-/*
-back-to-top
-=====end==== 
-*/
-
-/*
-wow-activition
-=====start==== 
-*/
-
 
 
 new WOW().init();
-/*
-wow-activition
-=====end==== 
-*/
 
 
 })(jQuery);

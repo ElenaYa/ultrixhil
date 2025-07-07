@@ -6,6 +6,7 @@
         <title>UltrixHil - Sobre el Estudio | Desarrollo de Juegos Móviles</title>
         <meta name="description" content="Conoce UltrixHil, el estudio líder en desarrollo de juegos móviles en Argentina. Más de 8 años creando experiencias épicas que conquistan millones de jugadores.">
         <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="robots" content="index, follow">
 		<link rel="shortcut icon" type="image/x-icon" href="assets/img/favicon.png">
         <!-- Place favicon.ico in the root directory -->
 
@@ -192,7 +193,7 @@
                         <div class="service-details-content mb-50">
 
                             <div class="service-details-main-img img-cover">
-                                <img src="assets/img/services/sd-img-1.jpg" alt="">
+                                <!-- удалено: отсутствующая картинка sd-img-1.jpg -->
                             </div>
 
                             <h2 class="chy-heading-1 service-details-title chy-split-in-right chy-split-text">Sobre UltrixHil</h2>
@@ -623,10 +624,12 @@ document.addEventListener('DOMContentLoaded', function() {
   if (!localStorage.getItem('cookieConsent')) {
     banner.style.display = 'block';
   }
-  btn.addEventListener('click', function() {
-    localStorage.setItem('cookieConsent', 'accepted');
-    banner.style.display = 'none';
-  });
+  if (btn) {
+    btn.addEventListener('click', function() {
+      localStorage.setItem('cookieConsent', 'accepted');
+      banner.style.display = 'none';
+    });
+  }
 });
 </script>
     </body>

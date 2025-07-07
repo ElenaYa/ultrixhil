@@ -12,7 +12,6 @@
         <meta name="geo.placename" content="Argentina">
 		<link rel="shortcut icon" type="image/x-icon" href="assets/img/favicon.png">
 
-		<!-- all-CSS-line-here -->
         <link rel="stylesheet" href="assets/css/bootstrap.min.css">
         <link rel="stylesheet" href="assets/css/all.min.css">
         <link rel="stylesheet" href="assets/css/nice-select.css">
@@ -142,23 +141,18 @@
     </head>
      
     <body>
-        <!-- preloader-start -->
         <div id="preloader">
             <div class="loader_line"></div>
         </div>
-        <!-- preloader-end -->
-
-        <!-- header-start -->
+      
         <header class="chy-header-4-area transparent-header">
             <div class="chy-header-4-wrap">
 
-                <!-- logo -->
                 <a aria-label="links" class="d-block chy-logo" href="index.html">
                     <img src="assets/img/logo/logo-white.png" alt="UltrixHil">
                 </a>
                 <div class="menu-wrap">
 
-                    <!-- menu -->
                     <div class="chy-main-menu-1 d-none d-lg-block">
                         <nav class="main-navigation clearfix ul-li">
                             <ul id="main-nav" class="nav navbar-nav clearfix">
@@ -189,7 +183,6 @@
                         </nav>
                     </div>
 
-                    <!-- btn -->
                     <a aria-label="header button" class="chy-pr-btn-5" href="contacto.html">
                         <span class="text">
                             Solicitar presupuesto
@@ -201,7 +194,6 @@
 
                 </div>
 
-                <!-- action-button -->
                 <div class="chy-header-4-action-button">
 
                     <div class="chy-call-1-btn-wrap">
@@ -214,7 +206,6 @@
                         </div>
                     </div>
 
-                    <!-- menu-btn -->
                     <div class="chy-menu-btn-1 open_mobile_menu d-lg-none" id="menuToggle">
                         <i class="fa-light fa-bars icon-1"></i>
                         <i class="fa-regular fa-angle-left icon-2"></i>
@@ -224,9 +215,7 @@
                 
             </div>
         </header>
-        <!-- header-start -->
-
-        <!-- offcanvas-start -->        
+            
         <div class="fullpage-menu" >
             <div class="fullpage-menu-inner">
                 <div class="menu-bg">
@@ -247,7 +236,6 @@
                 <div class="fullpage-content-wrap">
 
 
-                    <!-- mobile-menu-list -->
                     <nav class="mobile-main-navigation  clearfix ul-li">
                         <ul id="m-main-nav" class="nav navbar-nav clearfix">
 
@@ -313,9 +301,7 @@
             </div>
 
         </div>
-        <!-- offcanvas-end -->
-
-        <!-- breadcrumb-area-start -->
+   
         <div class="breadcrumb-area bg-default  has-breadcrumb-overlay" data-background="assets/img/hero/hero-bk.jpg">
             <div class="container h1-container">
                 <div class="row">
@@ -331,9 +317,7 @@
                 </div>
             </div>
         </div>
-        <!-- breadcrumb-area-end -->
-
-        <!-- error-404-area-start -->
+     
         <div class="error-404-area">
             <div class="error-404-particles">
                 <div class="error-404-particle" style="top: 20%; left: 10%;"></div>
@@ -366,13 +350,10 @@
                 </div>
             </div>
         </div>
-        <!-- error-404-area-end -->
-
-        <!-- footer-start -->
+      
         <footer class="chy-footer-1-area fix" data-background="assets/img/hero/hero-bk.jpg">
             <div class="container chy-container-1">
 
-                <!-- top-footer -->
                 <div class="chy-footer-1-top">
                  
                     <h3 class="chy-heading-1 title  chy-split-in-right chy-split-text" >Descubre cuánto cuesta crear el juego de tus sueños</h3>
@@ -386,7 +367,6 @@
                     </a>
                 </div>
 
-                <!-- meddle-footer -->
                 <div class="chy-footer-1-meddle">
                     <div class="footer-1-widget">
                         <div class="chy-footer-1-form-wrap">
@@ -433,7 +413,6 @@
                     </div>
                 </div>
 
-                <!-- bottom-footer -->
                 <div class="chy-footer-1-bottom">
                   
                     <h4 class="chy-heading-1 copyright-link">2024 UltrixHil Studio <span>| todos los derechos reservados</span></h4>
@@ -441,7 +420,6 @@
 
             </div>
         </footer>
-        <!-- footer-end -->
 
         <div class="scroll-top has-home-1">
             <div class="scroll-top-wrap">
@@ -451,7 +429,6 @@
        
         <div class="offcanvas-overlay"></div>
 
-        <!-- all-JS-link-here -->
         <script src="assets/js/jquery-3.7.1.min.js"></script>
         <script src="assets/js/bootstrap.bundle.min.js"></script>
         <script src="assets/js/swiper-bundle.min.js"></script>
@@ -490,7 +467,6 @@
                 setActiveNavigation();
             });
 
-            // Создаем дополнительные частицы динамически
             document.addEventListener('DOMContentLoaded', function() {
                 const particles = document.querySelector('.error-404-particles');
                 for (let i = 0; i < 20; i++) {
@@ -504,7 +480,6 @@
             });
         </script>
 
-        <!-- Cookie Consent Banner -->
         <div id="cookie-consent-banner" style="display:none;">
           <div class="cookie-banner-content">
             <span>Este sitio utiliza cookies para mejorar tu experiencia. Al continuar navegando, aceptas nuestra <a href='cookies-policy.html' target='_blank'>Política de cookies</a>.</span>
@@ -556,10 +531,12 @@
           if (!localStorage.getItem('cookieConsent')) {
             banner.style.display = 'block';
           }
-          btn.addEventListener('click', function() {
-            localStorage.setItem('cookieConsent', 'accepted');
-            banner.style.display = 'none';
-          });
+          if (btn) {
+            btn.addEventListener('click', function() {
+              localStorage.setItem('cookieConsent', 'accepted');
+              banner.style.display = 'none';
+            });
+          }
         });
         </script>
     </body>
