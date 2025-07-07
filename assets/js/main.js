@@ -1,26 +1,7 @@
-/*
-
-Template Name:  Choicy - Digital Marketing Agency HTML Template
-Description:  Digital Marketing Agency HTML Template
-Author: themexriver
-Version: 1.0
-
-====javascript indexing======
-
-preloader
-
-
-*/
-
 
 (function ($) {
 "use strict";
 
-/*
-preloader
-====start====
-*/
-// preloader start
 let preloader = document.querySelector("#preloader");
 	window.addEventListener('load', function(){
 		preloader.classList.add("preloaded");
@@ -33,18 +14,6 @@ gsap.config({
 	nullTargetWarn: false,
 });
 
-// preloader end
-/*
-preloder
-====end====
-*/
-
-
-
-/*
-mobile-menu
-====start====
-*/
 
 if($('.mobile-main-navigation li.dropdown ul').length){
 	$('.mobile-main-navigation li.dropdown').append('<div class="dropdown-btn"><span class="fas fa-caret-right"></span></div>');
@@ -55,15 +24,7 @@ if($('.mobile-main-navigation li.dropdown ul').length){
 $(".dropdown-btn").on("click", function () {
 	$(this).toggleClass("toggle-open");
 });
-/*
-mobile-menu
-====end====
-*/
 
-/*
-sticky-header
-====start====
-*/
 $(window).scroll(function() {
 	if ($(this).scrollTop() > 300){
 	$('.header_sticky').addClass('sticky');
@@ -72,16 +33,7 @@ $(window).scroll(function() {
 	$('.header_sticky').removeClass('sticky');
 	}
 });
-/*
-sticky-header
-====end====
-*/
 
-
-/*
-search-popup
-====start====
-*/
 
 $('.search_btn_toggle').on('click', function() {
 	$('.overlay, .search_1_popup_active').addClass('active');
@@ -90,17 +42,7 @@ $('.overlay, .search_1_popup_close').on('click', function() {
 	$('.search_1_popup_active').removeClass('active');
 	$('.overlay').removeClass('active');
 })
-/*
-search-popup
-====end====
-*/
 
-
-
-/*
-services-1
-====start====
-*/
 var services1 = new Swiper('.gto_services_1_active', {
 	loop: true,
 	speed: 1000,
@@ -132,16 +74,7 @@ var services1 = new Swiper('.gto_services_1_active', {
 		},
 	},
 });
-/*
-services-1
-====end====
-*/
 
-
-
-/* 
-	price-1-start
-*/
 	let price1 = new Swiper('.chy_price_1_active', {
 		loop: true,
 		spaceBetween: 0,
@@ -164,13 +97,7 @@ services-1
 			prevEl: ".chy_price_1_prev",
 		},
 	});
-/* 
-	price-1-end
-*/
 
-/* 
-	project-1-start
-*/
 	if (jQuery(".chy_project_1_active").length > 0) {
 		let swiperrecent = new Swiper('.chy_project_1_active', {
 			slidesPerView: 3,
@@ -184,7 +111,6 @@ services-1
 			autoplay: {
 				delay: 5000,
 				},
-			// If we need pagination
 			navigation: {
 				nextEl: ".chy_project_1_next",
 				prevEl: ".chy_project_1_prev",
@@ -216,14 +142,7 @@ services-1
 
 		});
 	}	  
-/* 
-	project-1-end
-*/
 
-
-/* 
-	price-1-start
-*/
 let teamslider1 = new Swiper('.chy_team_slider_1_active', {
 	loop: true,
 	spaceBetween: 0,
@@ -243,13 +162,7 @@ let teamslider1 = new Swiper('.chy_team_slider_1_active', {
 	  },
 
 });
-/* 
-price-1-end
-*/
 
-/* 
-	hero-2-start
-*/
 
 $( window ).on( "load", function() {
 	let chyhero2 = new Swiper('.chy_hero_2_active', {
@@ -273,16 +186,6 @@ $( window ).on( "load", function() {
 });
 
 
-
-
-/* 
-hero-2-end
-*/
-
-/*
-trusted-2
-====start====
-*/
 var trusted2 = new Swiper('.chy_trusted_2_active', {
 	loop: true,
 	speed: 1000,
@@ -316,20 +219,11 @@ var trusted2 = new Swiper('.chy_trusted_2_active', {
 		},
 	},
 });
-/*
-trusted-2
-====end====
-/*
 
-/* 
-	portfolio-2-start
-*/
 if (jQuery(".chy_portfolio_2_active").length > 0) {
 	let swiperrecent = new Swiper('.chy_portfolio_2_active', {
-		// slidesPerView: 3,
 		spaceBetween: 0,
 		loop: true,
-		// centeredSlides: true,
 		rtl: false,
 		infinite: false,
 		grabCursor: true,
@@ -371,14 +265,7 @@ if (jQuery(".chy_portfolio_2_active").length > 0) {
 
 	});
 }	  
-/* 
-portfolio-2-end
-*/
 
-
-/* 
-	hero-2-start
-*/
 let chyprice2 = new Swiper('.chy_price_2_active', {
 	loop: true,
 	spaceBetween: 0,
@@ -397,15 +284,7 @@ let chyprice2 = new Swiper('.chy_price_2_active', {
 		prevEl: ".chy_price_2_prev",
 	},
 });
-/* 
-hero-2-end
-*/
 
-
-
-/* 
-	testimonial-2-start
-*/
 let chytestimonial2 = new Swiper('.chy_testimonial_2_active', {
 	loop: true,
 	spaceBetween: 0,
@@ -420,15 +299,7 @@ let chytestimonial2 = new Swiper('.chy_testimonial_2_active', {
 		clickable: true
 	},
 });
-/* 
-testimonial-2-end
-*/
 
-
-/*
-project-3
-====start====
-*/
 var project3 = new Swiper('.chy_project_3_active', {
 	loop: true,
 	speed: 1000,
@@ -463,16 +334,7 @@ var project3 = new Swiper('.chy_project_3_active', {
 		},
 	},
 });
-/*
-project-3
-====end====
-/*
 
-
-
-/* 
-	testimonial-4-start
-*/
 let testimonial4 = new Swiper('.chy_testimonial_4_active', {
 	loop: true,
 	spaceBetween: 0,
@@ -486,16 +348,7 @@ let testimonial4 = new Swiper('.chy_testimonial_4_active', {
 		prevEl: ".chy_testimonial_4_prev",
 	},
 });
-/* 
-testimonial-4-end
-*/
 
-
-
-/*
-testimonial-5
-====start====
-*/
 let chyt5_thumb = new Swiper('.chy_t5_preview_active', {
 	spaceBetween: 30,
 	loop: false,
@@ -556,70 +409,27 @@ let chyt5_thumb = new Swiper('.chy_t5_preview_active', {
 		swiper: chyt5_thumb,
 	},
 	});
-/*
-testimonial-5
-====end====
-*/
 
-
-
-
-/*
-popup-video-activition
-====start====
-*/
 $('.popup-video').magnificPopup({
 	type: 'iframe'
 });
-/*
-popup-video-activition
-====end====
-*/
 
-/*
-popup-img-activition
-====start====
-*/
 $('.popup_img').magnificPopup({
 	type: 'image',
 	gallery: {
 		enabled: true,
 	},
 });
-/*
-popup-img-activition
-====end====
-*/
 
-/*
-counter-activition
-====start====
-*/
 $('.counter').counterUp({
 	delay: 10,
 	time: 3000
 });
-/*
-counter-activition
-====end====
-*/
 
-/*
-data-bg-activition
-====start====
-*/
 $("[data-background]").each(function(){
 	$(this).css("background-image","url("+$(this).attr("data-background") + ") ")
 })
-/*
-data-bg-activition
-====end====
-*/
 
-/*
-data-width-activition
-====start====
-*/
 $("[data-width]").each(function(){
 	$(this).css("width",$(this).attr("data-width"))
 })

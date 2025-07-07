@@ -184,10 +184,10 @@
             <div class="row">
                 <div class="col-xxl-12">
                     <div class="breadcrumb-wrap text-center">
-                        <h2 class="breadcrumb-title chy-heading-1 chy-split-in-right chy-split-text" >Contacto</h2>
+                        <h2 class="breadcrumb-title chy-heading-1 chy-split-in-right chy-split-text" >Política de Cookies</h2>
                         <div class="breadcrumb-list wow fadeInUp" data-wow-duration="2s">
                             <a href="index.html">Inicio</a>
-                            <span>Contacto</span>
+                            <span>Política de Cookies</span>
                         </div>
                     </div>
                 </div>
@@ -436,5 +436,64 @@
                 setActiveNavigation();
             });
         </script>
+
+<!-- Cookie Consent Banner -->
+<div id="cookie-consent-banner" style="display:none;">
+  <div class="cookie-banner-content">
+    <span>Este sitio utiliza cookies para mejorar tu experiencia. Al continuar navegando, aceptas nuestra <a href='cookies-policy.html' target='_blank'>Política de cookies</a>.</span>
+    <button id="cookie-accept-btn">Aceptar</button>
+  </div>
+</div>
+
+<style>
+#cookie-consent-banner {
+  position: fixed;
+  left: 0; right: 0; bottom: 0;
+  z-index: 9999;
+  background: rgba(24,24,24,0.98);
+  color: #fff;
+  padding: 0;
+  font-size: 16px;
+  box-shadow: 0 -2px 16px rgba(0,0,0,0.15);
+  animation: fadeInUp 0.7s;
+}
+.cookie-banner-content {
+  max-width: 700px;
+  margin: 0 auto;
+  padding: 18px 16px 18px 16px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+}
+#cookie-consent-banner a { color: #7ed6ff; text-decoration: underline; }
+#cookie-accept-btn {
+  background: linear-gradient(90deg, #00c3ff 0%, #7d5fff 100%);
+  color: #fff;
+  border: none;
+  border-radius: 20px;
+  padding: 8px 28px;
+  font-weight: 600;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background 0.2s;
+}
+#cookie-accept-btn:hover { background: linear-gradient(90deg, #7d5fff 0%, #00c3ff 100%); }
+@keyframes fadeInUp { from { transform: translateY(100%); opacity: 0; } to { transform: translateY(0); opacity: 1; } }
+</style>
+
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+  var banner = document.getElementById('cookie-consent-banner');
+  var btn = document.getElementById('cookie-accept-btn');
+  if (!localStorage.getItem('cookieConsent')) {
+    banner.style.display = 'block';
+  }
+  btn.addEventListener('click', function() {
+    localStorage.setItem('cookieConsent', 'accepted');
+    banner.style.display = 'none';
+  });
+});
+</script>
     </body>
 </html> 

@@ -1,0 +1,21 @@
+User-agent: *
+Allow: /
+
+Allow: /index.html
+Allow: /sobre-el-estudio.html
+Allow: /proyectos.html
+Allow: /equipo.html
+Allow: /contacto.html
+Allow: /politica-privacidad.html
+Allow: /terms-conditions.html
+Allow: /cookies-policy.html
+
+Allow: /assets/
+Allow: /assets/css/
+Allow: /assets/js/
+Allow: /assets/img/
+Allow: /assets/fonts/
+
+Sitemap: https://ultrixhil.com/sitemap.xml
+
+Crawl-delay: 1 
