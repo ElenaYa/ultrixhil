@@ -173,7 +173,7 @@ function user(): array {
 
                 <div class="fullpage-menu-logo-wrap">
                     <a href="/" class="menu-logo d-block" aria-label="brand-logo"  >
-                        <img src="assets/img/logo/Logo-white.png" alt="">
+                        <img src="assets/img/logo/logo-white.png" alt="">
                     </a>
                     <i id="menuToggle2" class="fas fullpage-menu-close fa-times"></i>
                 </div>
@@ -501,7 +501,7 @@ function user(): array {
             <div class="right">
                 <a href="equipo.html" aria-label="hero btn" class="chy-pr-btn-5">
                     <span class="text">
-                        Visualizar equipo integral
+                        Ver equipo
                     </span>
                     <span class="icon">
                         <i class="fa-solid fa-right-long"></i>
