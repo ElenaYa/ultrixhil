@@ -4250,7 +4250,7 @@ header innter
 }
 @media only screen and (min-width: 1200px) and (max-width: 1399px) {
   .chy-hero-4-content-wrap {
-    padding-top: 225px;
+    padding-top: 275px;
     padding-bottom: 110px;
   }
 }
@@ -4262,7 +4262,7 @@ header innter
 }
 @media only screen and (min-width: 768px) and (max-width: 991px), (max-width: 767px) {
   .chy-hero-4-content-wrap {
-    padding-top: 210px;
+    padding-top: 240px;
     padding-bottom: 30px;
   }
 }

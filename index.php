@@ -289,7 +289,7 @@ function user(): array {
                                     <div class="btn-wrap wow fadeInUp" data-wow-duration="2s" data-wow-delay="1.5s">
                                         <a href="contacto.html#registro" aria-label="hero btn" class="chy-pr-btn-5">
                                             <span class="text">
-                                                Regístrate y calcula tu juego
+                                            Calcula tu juego
                                             </span>
                                             <span class="icon">
                                                 <i class="fa-solid fa-right-long"></i>
@@ -425,7 +425,7 @@ function user(): array {
                             <div class="btn-wrap wow fadeInUp" data-wow-delay=".3s">
                                 <a href="sobre-el-estudio.html" aria-label="hero btn" class="chy-pr-btn-5">
                                     <span class="text">
-                                        Conoce más acerca del estudio
+                                        Conoce más
                                     </span>
                                     <span class="icon">
                                         <i class="fa-solid fa-right-long"></i>
@@ -662,7 +662,7 @@ function user(): array {
                             </ul>
                             <a href="sobre-el-estudio.html" aria-label="hero btn " class="chy-pr-btn-5 wow fadeInUp">
                                 <span class="text">
-                                    Conoce más acerca del estudio
+                                    Conoce más
                                 </span>
                                 <span class="icon">
                                     <i class="fa-solid fa-right-long"></i>
