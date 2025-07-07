@@ -14837,5 +14837,41 @@ progress-page
   color: var(--chy-pr-4);
   opacity: 1;
 }
+.body-bg-2 {
+  position: relative;
+  z-index: 1;
+}
+.body-bg-2::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: rgba(255, 255, 255, 0.9); 
+  z-index: 2;
+  pointer-events: none;
+}
+.body-bg-2 > * {
+  position: relative;
+  z-index: 3;
+}
+.chy-footer-1-area {
+  position: relative;
+  background-size: cover !important;
+  background-position: center !important;
+  background-repeat: no-repeat !important;
+  background-attachment: fixed !important;
+}
 
-/*# sourceMappingURL=main.css.map */
+.chy-footer-1-area::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 1;
+}
+
+.chy-footer-1-area > * {
+  position: relative;
+  z-index: 2;
+}

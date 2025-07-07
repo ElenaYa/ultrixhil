@@ -19,21 +19,7 @@
         <link rel="stylesheet" href="assets/css/magnific-popup.css">
         <link rel="stylesheet" href="assets/css/swiper.min.css">
         <link rel="stylesheet" href="assets/css/main.css">
-        <!-- <link rel="stylesheet" href="assets/css/ultrixhil-custom.css"> -->
-        
-        <style>
-            /* Стили для фонового изображения в FAQ секции */
-            .chy-faq-page-area.faq-overlay {
-                position: relative !important;
-                isolation: isolate;
-            }
-
-
-            .chy-faq-page-area.faq-overlay .container {
-                position: relative;
-                z-index: 4;
-            }
-        </style>
+     
     </head>
     
      
@@ -79,7 +65,7 @@
                                     </li>
 
                                     <li>
-                                        <a class="active" href="contacto.html">Contacto</a>
+                                        <a href="contacto.html">Contacto</a>
                                     </li>
         
                                 </ul>
@@ -627,17 +613,20 @@
 
         <script>
             document.addEventListener('DOMContentLoaded', function() {
+                // Получаем форму
                 const form = document.getElementById('gameProjectForm');
                 
+                // Добавляем обработчик отправки формы
                 form.addEventListener('submit', function(event) {
                     event.preventDefault();
                     
+                    // Проверяем валидность формы
                     if (!form.checkValidity()) {
                         event.stopPropagation();
-                     
+                        // Добавляем класс was-validated для показа сообщений об ошибках
                         form.classList.add('was-validated');
                         
-                        
+                        // Находим первый невалидный элемент и фокусируемся на нем
                         const firstInvalid = form.querySelector(':invalid');
                         if (firstInvalid) {
                             firstInvalid.focus();
@@ -645,22 +634,26 @@
                         return;
                     }
                     
+                    // Если форма валидна, показываем модальное окно
                     const modal = new bootstrap.Modal(document.getElementById('costModal'));
                     modal.show();
                     
+                    // Очищаем форму и убираем класс was-validated
                     form.reset();
                     form.classList.remove('was-validated');
                 });
 
+                // Валидация телефона
                 const phoneInput = document.getElementById('phone');
                 phoneInput.addEventListener('input', function(e) {
+                    let value = e.target.value.replace(/[^\d+]/g, ''); // Оставляем только цифры и +
                     if (value.length > 0 && !value.startsWith('+')) {
                         value = '+' + value;
                     }
                     e.target.value = value;
                 });
 
-             
+                // Валидация email
                 const emailInput = document.getElementById('email');
                 emailInput.addEventListener('input', function(e) {
                     const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
@@ -670,6 +663,26 @@
                         emailInput.setCustomValidity('Por favor, ingresa un email válido');
                     }
                 });
+
+                // Функция для определения активной страницы
+                function setActiveNavigation() {
+                    const currentPage = window.location.pathname.split('/').pop() || 'index.html';
+                    
+                    // Убираем все активные классы
+                    const allNavLinks = document.querySelectorAll('#main-nav a, #m-main-nav a');
+                    allNavLinks.forEach(link => link.classList.remove('active'));
+                    
+                    // Находим и активируем текущую страницу
+                    allNavLinks.forEach(link => {
+                        const href = link.getAttribute('href');
+                        if (href === currentPage) {
+                            link.classList.add('active');
+                        }
+                    });
+                }
+
+                // Вызываем функцию при загрузке страницы
+                setActiveNavigation();
             });
         </script>
 
@@ -725,7 +738,7 @@
                 left: 0;
                 right: 0;
                 bottom: 0;
-                
+              
                 z-index: 1;
             }
 
@@ -734,7 +747,42 @@
                 z-index: 2;
             }
 
+            /* Стили для фонового изображения в FAQ секции */
+            .faq-overlay {
+                position: relative;
+            }
 
+            .faq-overlay::before {
+                content: '';
+                position: absolute;
+                top: 0;
+                left: 0;
+                right: 0;
+                bottom: 0;
+                background: linear-gradient(180deg, 
+                    rgba(255,255,255,0.1) 0%,
+                    rgba(255,255,255,0.15) 50%,
+                    rgba(255,255,255,0.1) 100%
+                );
+                pointer-events: none;
+            }
+
+            .faq-overlay::after {
+                content: '';
+                position: absolute;
+                top: 0;
+                left: 0;
+                right: 0;
+                bottom: 0;
+                background: rgba(26, 26, 26, 0.4);
+                mix-blend-mode: overlay;
+                pointer-events: none;
+            }
+
+            .faq-overlay > * {
+                position: relative;
+                z-index: 4;
+            }
         </style>
     </body>
 </html>

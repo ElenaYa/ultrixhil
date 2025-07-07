@@ -46,7 +46,7 @@
                             <ul id="main-nav" class="nav navbar-nav clearfix">
     
                                 <li>
-                                    <a class="active" href="index.html">Inicio</a>
+                                    <a href="index.html">Inicio</a>
                                 </li>
                                 
                                 <li>
@@ -1427,5 +1427,29 @@
         <script src="assets/js/magnific-popup.min.js"></script>
         <script src="assets/js/appear.min.js"></script>
         <script src="assets/js/main.js"></script>
+
+        <script>
+            document.addEventListener('DOMContentLoaded', function() {
+                // Функция для определения активной страницы
+                function setActiveNavigation() {
+                    const currentPage = window.location.pathname.split('/').pop() || 'index.html';
+                    
+                    // Убираем все активные классы
+                    const allNavLinks = document.querySelectorAll('#main-nav a, #m-main-nav a');
+                    allNavLinks.forEach(link => link.classList.remove('active'));
+                    
+                    // Находим и активируем текущую страницу
+                    allNavLinks.forEach(link => {
+                        const href = link.getAttribute('href');
+                        if (href === currentPage) {
+                            link.classList.add('active');
+                        }
+                    });
+                }
+
+                // Вызываем функцию при загрузке страницы
+                setActiveNavigation();
+            });
+        </script>
     </body>
 </html>
