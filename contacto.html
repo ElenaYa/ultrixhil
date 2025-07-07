@@ -20,6 +20,20 @@
         <link rel="stylesheet" href="assets/css/swiper.min.css">
         <link rel="stylesheet" href="assets/css/main.css">
         <!-- <link rel="stylesheet" href="assets/css/ultrixhil-custom.css"> -->
+        
+        <style>
+            /* Стили для фонового изображения в FAQ секции */
+            .chy-faq-page-area.faq-overlay {
+                position: relative !important;
+                isolation: isolate;
+            }
+
+
+            .chy-faq-page-area.faq-overlay .container {
+                position: relative;
+                z-index: 4;
+            }
+        </style>
     </head>
     
      
@@ -57,7 +71,7 @@
                                     </li>
         
                                     <li>
-                                        <a href="proyectos.html">Proyectos en desarrollo</a>
+                                        <a href="proyectos.html">Proyectos</a>
                                     </li>
         
                                     <li>
@@ -65,19 +79,7 @@
                                     </li>
 
                                     <li>
-                                        <a class="active" href="contact.html">Contacto</a>
-                                    </li>
-
-                                    <li>
-                                        <a href="politica-privacidad.html">Política de privacidad</a>
-                                    </li>
-
-                                    <li>
-                                        <a href="terms-conditions.html">Términos y condiciones</a>
-                                    </li>
-
-                                    <li>
-                                        <a href="cookies-policy.html">Política de cookies</a>
+                                        <a class="active" href="contacto.html">Contacto</a>
                                     </li>
         
                                 </ul>
@@ -87,23 +89,10 @@
 
                     <!-- logo -->
                     <a aria-label="link" class="d-block chy-logo" href="index.html">
-                        <img src="assets/img/logo/logo-white.png" alt="">
+                        <img src="assets/img/logo/logo.png" alt="">
                     </a>
 
-                    <!-- search-item -->
-                    <div class="right d-none d-md-block">
-                        <div class="chy-cart-1 ">
-                            <input type="text" placeholder="search">
-                            <span class="search-icon">
-                                <i class="fa-solid fa-magnifying-glass"></i>
-                            </span>
-                            <div class="cart-btn-position">
-                                <a aria-label="link" href="#" class="chy-cart-btn-1" >
-                                    <i class="fa-solid fa-bag-shopping"></i>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
+                  
                     
                 </div>
 
@@ -122,17 +111,12 @@
 
                 <div class="fullpage-menu-logo-wrap">
                     <a href="index.html" class="menu-logo d-block" aria-label="brand-logo"  >
-                        <img src="assets/img/logo/Logo-white.png" alt="">
+                        <img src="assets/img/logo/logo.png" alt="logo">
                     </a>
                     <i id="menuToggle2" class="fas fullpage-menu-close fa-times"></i>
                 </div>
 
-                <div class="mobile-search-bar">
-                    <form action="#">
-                        <input type="text" name="search" placeholder="Keywords">
-                        <button type="button" aria-label="search" ><i class="fal fa-search"></i></button>
-                    </form>
-                </div>
+             
 
     
                 <div class="fullpage-content-wrap">
@@ -141,143 +125,30 @@
                     <!-- mobile-menu-list -->
                     <nav class="mobile-main-navigation  clearfix ul-li">
                         <ul id="m-main-nav" class="nav navbar-nav clearfix">
-
-
-                            <li class="dropdown">
-                                <a href="!#">home</a>
-                                <ul class="dropdown-menu clearfix">
-                                    <li>
-                                        <a href="index.html">home one</a>
-                                    </li>
-                                    <li>
-                                        <a href="home-2.html">home two</a>
-                                    </li>
-                                    <li>
-                                        <a href="home-3.html">home three</a>
-                                    </li>
-                                    <li>
-                                        <a href="home-4.html">home four</a>
-                                    </li>
-                                </ul>
-                            </li>
-                            
-                            <li class="dropdown">
-                                <a href="#">about</a>
-                                <ul class="dropdown-menu clearfix">
-                                    <li >
-                                        <a href="about-1.html">about one</a>
-                                    </li>
-                                    <li >
-                                        <a href="about-2.html">about two</a>
-                                    </li>
-                                    <li >
-                                        <a href="about-3.html">about three</a>
-                                    </li>
-                                </ul>
-                            </li>
-
-                            <li class="dropdown">
-                                <a href="!#">projects</a>
-                                <ul class="dropdown-menu clearfix">
-                                    <li >
-                                        <a href="projects-1.html">projects one</a>
-                                    </li>
-                                    <li >
-                                        <a href="projects-2.html">projects two</a>
-                                    </li>
-                                    <li >
-                                        <a href="projects-details.html">projects details</a>
-                                    </li>
-                                   
-                                </ul>
-                            </li>
-
-                            <li class="dropdown">
-                                <a href="!#">services</a>
-                                <ul class="dropdown-menu clearfix">
-                                    <li >
-                                        <a href="services-1.html">services one</a>
-                                    </li>
-                                    <li >
-                                        <a href="services-2.html">services two</a>
-                                    </li>
-                                    <li >
-                                        <a href="services-details.html">services details</a>
-                                    </li>
-                                </ul>
-                            </li>
-
-                            <li class="dropdown">
-                                <a href="!#">career</a>
-                                <ul class="dropdown-menu clearfix">
-                                    <li >
-                                        <a href="career.html">career</a>
-                                    </li>
-                                    <li >
-                                        <a href="career-details.html">career details</a>
-                                    </li>
-                                    <li >
-                                        <a href="job-apply.html">job apply</a>
-                                    </li>
-                                   
-                                </ul>
-                            </li>
-
-                            <li class="dropdown">
-                                <a href="!#">blog</a>
-                                <ul class="dropdown-menu clearfix">
-                                    <li >
-                                        <a href="blog-1.html">blog one</a>
-                                    </li>
-                                    <li >
-                                        <a href="blog-2.html">blog two</a>
-                                    </li>
-                                    <li >
-                                        <a href="blog-details.html">projects details</a>
-                                    </li>
-                                   
-                                </ul>
-                            </li>
-                            
-                            <li class="dropdown">
-                                <a href="!#">pages</a>
-                                <ul class="dropdown-menu clearfix">
-                                    <li class="dropdown">
-                                        <a href="!#">team</a>
-                                        <ul class="dropdown-menu clearfix">
-                                            <li >
-                                                <a href="team-1.html">team one</a>
-                                            </li>
-                                            <li >
-                                                <a href="team-2.html">team two</a>
-                                            </li>
-                                            <li >
-                                                <a href="team-details.html">team details</a>
-                                            </li>
-                                        </ul>
-                                    </li>
-                                    <li >
-                                        <a href="faqs.html">FAQs</a>
-                                    </li>
-                                    <li >
-                                        <a href="testimonial.html">testimonial</a>
-                                    </li>
-                                    <li >
-                                        <a href="our-clients.html">our clients</a>
-                                    </li>
-                                    <li >
-                                        <a href="pricing.html">price</a>
-                                    </li>
-                                    <li >
-                                        <a href="process.html">process</a>
-                                    </li>
-                                </ul>
-                            </li>
-
                             <li>
-                                <a href="contact.html">contact</a>
+                                <a href="index.html">Inicio</a>
                             </li>
-
+                            <li>
+                                <a href="sobre-el-estudio.html">Sobre el estudio</a>
+                            </li>
+                            <li>
+                                <a href="proyectos.html">Proyectos</a>
+                            </li>
+                            <li>
+                                <a href="equipo.html">Equipo</a>
+                            </li>
+                            <li>
+                                <a href="contacto.html">Contáctanos</a>
+                            </li>
+                            <li>
+                                <a href="politica-privacidad.html">Política de privacidad</a>
+                            </li>
+                            <li>
+                                <a href="terms-conditions.html">Términos y condiciones</a>
+                            </li>
+                            <li>
+                                <a href="cookies-policy.html">Política de cookies</a>
+                            </li>
                         </ul>
                     </nav>
 
@@ -304,36 +175,13 @@
                     </div>
                 </div>
 
-                <ul class="full-page-socail-link text-center pt-50">
-                    <li>
-                        <a href="#">
-                            <i class="fab fa-facebook-f"></i>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#">
-                            <i class="fab fa-instagram"></i>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#">
-                            <i class="fab fa-linkedin-in"></i>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#">
-                            <i class="fab fa-youtube"></i>
-                        </a>
-                    </li>
-                </ul>
-
             </div>
 
         </div>
         <!-- offcanvas-end -->
 
 		<!-- breadcrumb-area-start -->
-		<div class="breadcrumb-area bg-default  has-breadcrumb-overlay" data-background="assets/img/breadcrumb/breadcrumb-img-1.jpg">
+		<div class="breadcrumb-area bg-default  has-breadcrumb-overlay" data-background="assets/img/hero/hero-bk.jpg">
 			<div class="container h1-container">
 				<div class="row">
 					<div class="col-xxl-12">
@@ -353,7 +201,28 @@
         <!-- contact-page-start -->
         <div class="contact-page-area bg-default pt-120 pb-120" data-background="assets/img/bg/body-bg-3.png">
             <div class="container chy-container-1">
-
+                <!-- Modal -->
+                <div class="modal fade" id="costModal" tabindex="-1" aria-labelledby="costModalLabel" aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered">
+                        <div class="modal-content" style="background: #1a1a1a; color: #ffffff; border: 2px solid var(--ultrix-neon-blue); box-shadow: 0 0 20px rgba(0,123,255,0.3);">
+                            <div class="modal-header" style="border-bottom: 2px solid var(--ultrix-neon-purple); padding: 20px; background: #141414;">
+                                <h5 class="modal-title chy-heading-1" style="color: var(--ultrix-neon-blue); font-size: 24px; margin: 0;" id="costModalLabel">¡Gracias por tu interés!</h5>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close" style="background-color: var(--ultrix-neon-red); opacity: 1;"></button>
+                            </div>
+                            <div class="modal-body" style="padding: 30px; background: #1a1a1a;">
+                                <p class="chy-para-1" style="color: #ffffff; font-size: 16px; line-height: 1.6; margin-bottom: 20px;">Hemos recibido tu solicitud. Nuestro equipo analizará los detalles de tu proyecto y te contactará dentro de las próximas 24-48 horas con una estimación personalizada.</p>
+                                <div class="text-center mt-4">
+                                    <i class="fas fa-check-circle" style="font-size: 48px; color: var(--ultrix-neon-blue); text-shadow: 0 0 10px rgba(0,123,255,0.5);"></i>
+                                </div>
+                            </div>
+                            <div class="modal-footer" style="border-top: 1px solid var(--ultrix-neon-purple);">
+                                <button type="button" class="chy-pr-btn-1" data-bs-dismiss="modal">
+                                    <span class="text">Entendido</span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
 
                 <!-- .section-title -->
                 <div class="section-title-wrap mb-50 text-center">
@@ -363,26 +232,29 @@
 
                 <div class="row">
                     <div class="col-lg-7">
-                        <div class="contact-form-2-wrap">
+                        <div class="contact-form-2-wrap" id="contact-form">
                             <h6 class="title chy-heading-1">regístrate ahora</h6>
-                            <form class="contact-form-2"  action="#">
+                            <form class="contact-form-2" id="gameProjectForm" novalidate>
                                 <div class="item 1">
                                     <label for="name">Nombre completo<span>*</span></label>
-                                    <input id="name" type="text" placeholder="Tu nombre completo">
+                                    <input id="name" type="text" placeholder="Tu nombre completo" required>
+                                    <div class="invalid-feedback" style="color: var(--ultrix-neon-red);">Por favor, ingresa tu nombre completo</div>
                                 </div>
 
                                 <div class="item2">
-                                    <label for="phone">Número de teléfono<span>*</span></label>
-                                    <input id="phone" type="tel" placeholder="+54 11 xxxx xxxx">
+                                    <label for="phone">Número de teléfono</label>
+                                    <input id="phone" type="tel" placeholder="+54 11 xxxx xxxx" pattern="[\+]?[0-9]{8,}">
+                                    <div class="invalid-feedback" style="color: var(--ultrix-neon-red);">Por favor, ingresa un número de teléfono válido</div>
                                 </div>
 
                                 <div class="item3">
                                     <label for="email">Correo electrónico<span>*</span></label>
-                                    <input id="email" type="email" placeholder="tu@email.com">
+                                    <input id="email" type="email" placeholder="tu@email.com" required>
+                                    <div class="invalid-feedback" style="color: var(--ultrix-neon-red);">Por favor, ingresa un email válido</div>
                                 </div>
 
                                 <div class="item4">
-                                    <label for="name">Tipo de proyecto<span>*</span></label>
+                                    <label for="name">Tipo de proyecto</label>
                                     <div class="nice-select option-selector " tabindex="0">
                                         <span class="current">Selecciona el tipo de juego</span>
                                         <ul class="list">
@@ -397,12 +269,13 @@
                                 </div>
 
                                 <div class="item5">
-                                    <label for="name">Describe tu idea de juego<span>*</span></label>
-                                    <textarea  cols="30" rows="10" placeholder="Cuéntanos sobre tu proyecto soñado. Qué mecánicas, historia, estilo visual imaginas..."></textarea>
+                                    <label for="description">Describe tu idea de juego<span>*</span></label>
+                                    <textarea id="description" cols="30" rows="10" placeholder="Cuéntanos sobre tu proyecto soñado. Qué mecánicas, historia, estilo visual imaginas..." required></textarea>
+                                    <div class="invalid-feedback" style="color: var(--ultrix-neon-red);">Por favor, describe tu idea de juego</div>
                                 </div>
         
                                 <div class="btn-wrap item6">
-                                    <button type="button" aria-label="contact form" class="chy-pr-btn-1"> 
+                                    <button type="submit" aria-label="contact form" class="chy-pr-btn-1"> 
                                         <span class="text">
                                             descubre el costo
                                         </span>
@@ -421,7 +294,8 @@
                     <div class="col-lg-5">
                         <div class="contact-page-content">
                             <div class="contact-page-map mb-40">
-                                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3282.8707!2d-58.3679!3d-34.6574!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95a3335bb532bde7%3A0x6dc0c71b7e3b6b57!2sAv.%20Hip%C3%B3lito%20Yrigoyen%2C%20Avellaneda%2C%20Provincia%20de%20Buenos%20Aires%2C%20Argentina!5e0!3m2!1ses!2sar!4v1703659075536!5m2!1ses!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3018.4436836332675!2d-58.3968645!3d-34.850096!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcd4b8511a158d%3A0x7b921cc887dbca11!2sAv.%20Hip%C3%B3lito%20Yrigoyen%2C%20Provincia%20de%20Buenos%20Aires%2C%20Argentina!5e1!3m2!1ses!2sua!4v1751868590882!5m2!1ses!2sua" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                                
                             </div>
                             <div class="border-left">
                                 <div class="contact-page-contact-list mb-50">
@@ -462,29 +336,7 @@
                                         </div>
                                     </div>
                                 </div>
-                                <ul class="contact-page-social-link">
-                                    <li>
-                                        <a aria-label="social" href="#">
-                                            <i class="fab fa-facebook-f"></i>
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a aria-label="social" href="#">
-                                            <i class="flaticon-twitter"></i>
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a aria-label="social" href="#">
-                                            <i class="fab fa-dribbble"></i>
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a aria-label="social" href="#">
-                                            <i class="fab fa-behance"></i>
-                                        </a>
-                                    </li>
-
-                                </ul>
+                             
                             </div>
                         </div>
                     </div>
@@ -494,7 +346,7 @@
         </div>
         <!-- contact-page-end -->
              <!-- faq-start -->
-        <div class="chy-faq-page-area bg-default pt-120 pb-120" data-background="assets/img/bg/body-bg-1.png">
+        <div class="chy-faq-page-area bg-default pt-120 pb-120 faq-overlay" data-background="assets/img/bg/body-bg-3.png">
             <div class="container chy-container-1">
                 <div class="row">
 
@@ -504,23 +356,10 @@
 
                             <!-- section-title -->
                             <div class="section-title-wrap ">
-                                <h5 class="chy-subtitle-1 wow fadeInLeft">popular questions</h5>
-                                <h2 class="chy-title-1 has-55 chy-split-in-right chy-split-text">Frequently Asked Questions</h2>
-                                <p class="chy-section-para-1 wow fadeInLeft">At tempus aenean sapien torquent sed diam class efficitur mus morbi eros dictum quam augue ac laor eet ligula libero mi commodo.</p>
+                                <h5 class="chy-subtitle-1 wow fadeInLeft">preguntas populares</h5>
+                                <h2 class="chy-title-1 has-55 chy-split-in-right chy-split-text">Preguntas Frecuentes</h2>
+                                <p class="chy-section-para-1 wow fadeInLeft">Resolvemos tus dudas sobre el desarrollo de juegos móviles. Encuentra respuestas a las preguntas más comunes sobre nuestros servicios y proceso de trabajo.</p>
                             </div>
-
-                            <div class="btn-wrap wow fadeInLeft" data-wow-duration="1s">
-                                <a class="chy-pr-btn-1" >
-                                    <span class="text">
-                                        other question?
-                                    </span>
-                                    <span class="icon">
-                                        <i class="fa-solid fa-right-long"></i>
-                                    </span>
-                                </a>
-                            </div>
-
-
                         </div>
                     </div>
 
@@ -534,14 +373,14 @@
                                     <h2 class="accordion-header" id="heading17">
                                         <button class="accordion-button " type="button" data-bs-toggle="collapse" data-bs-target="#collapse17" aria-expanded="false" aria-controls="collapse17">
                                             <span class="icon-2"><i class="flaticon-arrow"></i></span>
-                                            <span class="title chy-heading-1" >What Is Insurance Services?</span>
+                                            <span class="title chy-heading-1" >¿Qué tipos de juegos móviles desarrollan?</span>
                                             <span class="icon"><i class="far fa-plus"></i></span>
                                         </button>
                                     </h2>
                                     <div id="collapse17" class="accordion-collapse collapse show" aria-labelledby="heading17" data-bs-parent="#accordionExample_31">
                                         <div class="accordion-body ">
                                             <div class="disc chy-para-1">
-                                                Quisque pulvinar facilisi tempor condimentum sit dui pharetra ad fringilla cu. Consecte nisl lacus felis proin inceptos vestibu lum mi fermentum cubilia. Au praesent vel ridiculu blandit dapibus vehicula. Dignissim tortor ultricies iaculis penatibus hendrerit scelerisque eli fames donec. Tellus in curae suspendisse tortor commodo parturient pede magna libe phasellus quam.
+                                                Desarrollamos una amplia variedad de juegos móviles, desde juegos casuales hasta títulos más complejos. Nuestra experiencia incluye juegos de puzzle, aventura, estrategia y arcade. Trabajamos tanto con Unity como con Unreal Engine, adaptándonos a las necesidades específicas de cada proyecto.
                                             </div>
                                         </div>
                                     </div>
@@ -552,14 +391,14 @@
                                     <h2 class="accordion-header" id="heading10">
                                         <button class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#collapse10" aria-expanded="true" aria-controls="collapse10">
                                             <span class="icon-2"><i class="flaticon-arrow"></i></span>
-                                            <span class="title chy-heading-1" >How Many Service We Provide ?</span>
+                                            <span class="title chy-heading-1" >¿Cuánto tiempo toma desarrollar un juego?</span>
                                             <span class="icon"><i class="far fa-plus"></i></span>
                                         </button>
                                     </h2>
                                     <div id="collapse10" class="accordion-collapse collapse" aria-labelledby="heading10" data-bs-parent="#accordionExample_31">
                                         <div class="accordion-body ">
                                             <div class="disc chy-para-1">
-                                                Quisque pulvinar facilisi tempor condimentum sit dui pharetra ad fringilla cu. Consecte nisl lacus felis proin inceptos vestibu lum mi fermentum cubilia. Au praesent vel ridiculu blandit dapibus vehicula. Dignissim tortor ultricies iaculis penatibus hendrerit scelerisque eli fames donec. Tellus in curae suspendisse tortor commodo parturient pede magna libe phasellus quam.
+                                                El tiempo de desarrollo varía según la complejidad del juego. Un juego casual simple puede tomar 3-4 meses, mientras que un juego más complejo puede llevar 6-12 meses. Proporcionamos un cronograma detallado al inicio del proyecto basado en tus requisitos específicos.
                                             </div>
                                         </div>
                                     </div>
@@ -570,14 +409,14 @@
                                     <h2 class="accordion-header" id="heading13">
                                         <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse13" aria-expanded="false" aria-controls="collapse13">
                                             <span class="icon-2"><i class="flaticon-arrow"></i></span>
-                                            <span class="title chy-heading-1" >Why We Are The Best Company?</span>
+                                            <span class="title chy-heading-1" >¿Cómo monetizan los juegos?</span>
                                             <span class="icon"><i class="far fa-plus"></i></span>
                                         </button>
                                     </h2>
                                     <div id="collapse13" class="accordion-collapse collapse" aria-labelledby="heading13" data-bs-parent="#accordionExample_31">
                                         <div class="accordion-body ">
                                             <div class="disc chy-para-1">
-                                                Quisque pulvinar facilisi tempor condimentum sit dui pharetra ad fringilla cu. Consecte nisl lacus felis proin inceptos vestibu lum mi fermentum cubilia. Au praesent vel ridiculu blandit dapibus vehicula. Dignissim tortor ultricies iaculis penatibus hendrerit scelerisque eli fames donec. Tellus in curae suspendisse tortor commodo parturient pede magna libe phasellus quam.
+                                                Implementamos diferentes estrategias de monetización según el tipo de juego: publicidad in-game, compras dentro de la aplicación, modelo freemium o pago único. Analizamos el mercado y tu público objetivo para recomendar la mejor estrategia de monetización.
                                             </div>
                                         </div>
                                     </div>
@@ -588,14 +427,14 @@
                                     <h2 class="accordion-header" id="heading16">
                                         <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse16" aria-expanded="false" aria-controls="collapse16">
                                             <span class="icon-2"><i class="flaticon-arrow"></i></span>
-                                            <span class="title chy-heading-1" >The Best Company? Why We Are</span>
+                                            <span class="title chy-heading-1" >¿Ofrecen mantenimiento post-lanzamiento?</span>
                                             <span class="icon"><i class="far fa-plus"></i></span>
                                         </button>
                                     </h2>
                                     <div id="collapse16" class="accordion-collapse collapse" aria-labelledby="heading16" data-bs-parent="#accordionExample_31">
                                         <div class="accordion-body ">
                                             <div class="disc chy-para-1">
-                                                Quisque pulvinar facilisi tempor condimentum sit dui pharetra ad fringilla cu. Consecte nisl lacus felis proin inceptos vestibu lum mi fermentum cubilia. Au praesent vel ridiculu blandit dapibus vehicula. Dignissim tortor ultricies iaculis penatibus hendrerit scelerisque eli fames donec. Tellus in curae suspendisse tortor commodo parturient pede magna libe phasellus quam.
+                                                Sí, ofrecemos servicios completos de mantenimiento post-lanzamiento. Esto incluye actualizaciones de contenido, corrección de errores, optimización de rendimiento y soporte técnico continuo. También monitoreamos las métricas del juego para realizar mejoras basadas en datos.
                                             </div>
                                         </div>
                                     </div>
@@ -606,14 +445,14 @@
                                     <h2 class="accordion-header" id="heading177">
                                         <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse177" aria-expanded="false" aria-controls="collapse177">
                                             <span class="icon-2"><i class="flaticon-arrow"></i></span>
-                                            <span class="title chy-heading-1" >Cubilia efficitur praesent morbi libero eleifend enim?</span>
+                                            <span class="title chy-heading-1" >¿En qué plataformas publican los juegos?</span>
                                             <span class="icon"><i class="far fa-plus"></i></span>
                                         </button>
                                     </h2>
                                     <div id="collapse177" class="accordion-collapse collapse" aria-labelledby="heading177" data-bs-parent="#accordionExample_31">
                                         <div class="accordion-body ">
                                             <div class="disc chy-para-1">
-                                                Quisque pulvinar facilisi tempor condimentum sit dui pharetra ad fringilla cu. Consecte nisl lacus felis proin inceptos vestibu lum mi fermentum cubilia. Au praesent vel ridiculu blandit dapibus vehicula. Dignissim tortor ultricies iaculis penatibus hendrerit scelerisque eli fames donec. Tellus in curae suspendisse tortor commodo parturient pede magna libe phasellus quam.
+                                                Publicamos en las principales tiendas de aplicaciones: Google Play Store para Android y App Store para iOS. También podemos considerar otras plataformas como Amazon App Store o tiendas específicas según tus necesidades de distribución.
                                             </div>
                                         </div>
                                     </div>
@@ -624,14 +463,14 @@
                                     <h2 class="accordion-header" id="heading18">
                                         <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse18" aria-expanded="false" aria-controls="collapse18">
                                             <span class="icon-2"><i class="flaticon-arrow"></i></span>
-                                            <span class="title chy-heading-1" >Vitae ut nunc parturient suspendisse proin?</span>
+                                            <span class="title chy-heading-1" >¿Qué derechos tengo sobre el juego?</span>
                                             <span class="icon"><i class="far fa-plus"></i></span>
                                         </button>
                                     </h2>
                                     <div id="collapse18" class="accordion-collapse collapse" aria-labelledby="heading18" data-bs-parent="#accordionExample_31">
                                         <div class="accordion-body ">
                                             <div class="disc chy-para-1">
-                                                Quisque pulvinar facilisi tempor condimentum sit dui pharetra ad fringilla cu. Consecte nisl lacus felis proin inceptos vestibu lum mi fermentum cubilia. Au praesent vel ridiculu blandit dapibus vehicula. Dignissim tortor ultricies iaculis penatibus hendrerit scelerisque eli fames donec. Tellus in curae suspendisse tortor commodo parturient pede magna libe phasellus quam.
+                                                Una vez completado el proyecto y realizado el pago final, recibes todos los derechos de propiedad intelectual del juego. Esto incluye el código fuente, assets gráficos y todos los elementos creativos desarrollados específicamente para tu juego.
                                             </div>
                                         </div>
                                     </div>
@@ -642,14 +481,14 @@
                                     <h2 class="accordion-header" id="heading19">
                                         <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse19" aria-expanded="false" aria-controls="collapse19">
                                             <span class="icon-2"><i class="flaticon-arrow"></i></span>
-                                            <span class="title chy-heading-1" >Senectus massa pulvinar auctor suscipit non?</span>
+                                            <span class="title chy-heading-1" >¿Cómo garantizan la calidad del juego?</span>
                                             <span class="icon"><i class="far fa-plus"></i></span>
                                         </button>
                                     </h2>
                                     <div id="collapse19" class="accordion-collapse collapse" aria-labelledby="heading19" data-bs-parent="#accordionExample_31">
                                         <div class="accordion-body ">
                                             <div class="disc chy-para-1">
-                                                Quisque pulvinar facilisi tempor condimentum sit dui pharetra ad fringilla cu. Consecte nisl lacus felis proin inceptos vestibu lum mi fermentum cubilia. Au praesent vel ridiculu blandit dapibus vehicula. Dignissim tortor ultricies iaculis penatibus hendrerit scelerisque eli fames donec. Tellus in curae suspendisse tortor commodo parturient pede magna libe phasellus quam.
+                                                Implementamos un riguroso proceso de control de calidad que incluye pruebas automatizadas y manuales. Realizamos pruebas de rendimiento, compatibilidad con diferentes dispositivos, y sesiones de playtesting para garantizar una experiencia de juego óptima.
                                             </div>
                                         </div>
                                     </div>
@@ -660,14 +499,14 @@
                                     <h2 class="accordion-header" id="heading20">
                                         <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse20" aria-expanded="false" aria-controls="collapse20">
                                             <span class="icon-2"><i class="flaticon-arrow"></i></span>
-                                            <span class="title chy-heading-1" >Nunc hendrerit fringilla ultricies habitasse condimentum?</span>
+                                            <span class="title chy-heading-1" >¿Cuál es el proceso de desarrollo?</span>
                                             <span class="icon"><i class="far fa-plus"></i></span>
                                         </button>
                                     </h2>
                                     <div id="collapse20" class="accordion-collapse collapse" aria-labelledby="heading20" data-bs-parent="#accordionExample_31">
                                         <div class="accordion-body ">
                                             <div class="disc chy-para-1">
-                                                Quisque pulvinar facilisi tempor condimentum sit dui pharetra ad fringilla cu. Consecte nisl lacus felis proin inceptos vestibu lum mi fermentum cubilia. Au praesent vel ridiculu blandit dapibus vehicula. Dignissim tortor ultricies iaculis penatibus hendrerit scelerisque eli fames donec. Tellus in curae suspendisse tortor commodo parturient pede magna libe phasellus quam.
+                                                Seguimos una metodología ágil con fases claras: conceptualización, diseño, desarrollo, pruebas y lanzamiento. Mantenemos una comunicación constante con actualizaciones semanales y demos jugables para asegurar que el proyecto avanza según tus expectativas.
                                             </div>
                                         </div>
                                     </div>
@@ -684,18 +523,16 @@
         <!-- faq-end -->
 
         <!-- footer-start -->
-        <footer class="chy-footer-1-area fix" >
+        <footer class="chy-footer-1-area fix" data-background="assets/img/hero/hero-bk.jpg">
             <div class="container chy-container-1">
 
                 <!-- top-footer -->
                 <div class="chy-footer-1-top">
-                    <a aria-label="link" class="d-block footer-logo" href="index.html">
-                        <img src="assets/img/logo/logo-white.png" alt="">
-                    </a>
-                    <h3 class="chy-heading-1 title  chy-split-in-right chy-split-text" >¿Listo para empezar tu proyecto?</h3>
-                    <a class="chy-pr-btn-1 ">
+                 
+                    <h3 class="chy-heading-1 title  chy-split-in-right chy-split-text" >Descubre cuánto cuesta crear el juego de tus sueños</h3>
+                    <a href="#contact-form" class="chy-pr-btn-1">
                         <span class="text">
-                            regístrate gratis
+                            Regístrate
                         </span>
                         <span class="icon">
                             <i class="fa-solid fa-right-long"></i>
@@ -707,47 +544,12 @@
                 <div class="chy-footer-1-meddle">
                     <div class="footer-1-widget">
                         <div class="chy-footer-1-form-wrap">
-                            <h4 class="chy-heading-1 title">Suscríbete a nuestras <br> noticias gaming</h4>
-                            <form class="chy-footer-1-form" action="#">
-                                <input type="text" placeholder="ingresa tu email">
-                                <button type="button" aria-label="newsletter" ><i class="fas fa-envelope"></i></button>
-                            </form>
+                            <img src="assets/img/logo/logo-white.png" alt="Logo" class="footer-logo">
+                            <h4 class="chy-heading-1 title">Crea juegos de tus sueños<br>juntos con nosotros</h4>
                         </div>
                     </div>
-                    <div class="footer-1-widget">
-                        <h4 class="chy-heading-1 chy-footer-1-widget-title">Servicios</h4>
-                        <ul class="chy-footer-1-menu" >
-                            <li>
-                                <a href="services-details.html">Desarrollo de juegos</a>
-                            </li>
-                            <li>
-                                <a href="services-details.html">Diseño de personajes</a>
-                            </li>
-                            <li>
-                                <a href="services-details.html">Arte conceptual</a>
-                            </li>
-                            <li>
-                                <a href="services-details.html">Optimización móvil</a>
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="footer-1-widget">
-                        <h4 class="chy-heading-1 chy-footer-1-widget-title">Estudio</h4>
-                        <ul class="chy-footer-1-menu" >
-                            <li>
-                                <a href="services-details.html">Nuestra historia</a>
-                            </li>
-                            <li>
-                                <a href="projects-2.html">Proyectos</a>
-                            </li>
-                            <li>
-                                <a href="team-1.html">Equipo</a>
-                            </li>
-                            <li>
-                                <a href="career-details.html">Únete al equipo</a>
-                            </li>
-                        </ul>
-                    </div>
+                   
+                  
                     <div class="footer-1-widget">
                         <h4 class="chy-heading-1 chy-footer-1-widget-title">Navegación</h4>
                         <ul class="chy-footer-1-menu" >
@@ -755,13 +557,13 @@
                                 <a href="index.html">Inicio</a>
                             </li>
                             <li>
-                                <a href="projects-2.html">Proyectos</a>
+                                <a href="sobre-el-estudio.html">Sobre el estudio</a>
                             </li>
                             <li>
-                                <a href="blog-details.html">Blog</a>
+                                <a href="proyectos.html">Proyectos</a>
                             </li>
                             <li>
-                                <a href="contact.html">Contacto</a>
+                                <a href="equipo.html">Equipo</a>
                             </li>
                         </ul>
                     </div>
@@ -769,16 +571,17 @@
                         <h4 class="chy-heading-1 chy-footer-1-widget-title">Ayuda</h4>
                         <ul class="chy-footer-1-menu" >
                             <li>
-                                <a href="faqs.html">FAQs</a>
+                                <a href="contacto.html">Contáctanos</a>
+                            </li>
+                          
+                            <li>
+                                <a href="politica-privacidad.html">Política de privacidad</a>
                             </li>
                             <li>
-                                <a href="contact.html">Contáctanos</a>
+                                <a href="terms-conditions.html">Términos y condiciones</a>
                             </li>
                             <li>
-                                <a href="privacy-policy.html">Privacidad</a>
-                            </li>
-                            <li>
-                                <a href="terms-conditions.html">Términos</a>
+                                <a href="cookies-policy.html">Política de cookies</a>
                             </li>
                         </ul>
                     </div>
@@ -786,20 +589,7 @@
 
                 <!-- bottom-footer -->
                 <div class="chy-footer-1-bottom">
-                    <ul class="chy-footer-1-social-link">
-                        <li>
-                            <a aria-label="link" href="#"><i class="fab fa-facebook"></i></a>
-                        </li>
-                        <li>
-                            <a aria-label="link" href="#"><i class="fab fa-twitter"></i></a>
-                        </li>
-                        <li>
-                            <a aria-label="link" href="#"><i class="fab fa-instagram"></i></a>
-                        </li>
-                        <li>
-                            <a aria-label="link" href="#"><i class="fab fa-youtube"></i></a>
-                        </li>
-                    </ul>
+                  
                     <h4 class="chy-heading-1 copyright-link">2024 UltrixHil Studio <span>| todos los derechos reservados</span></h4>
                 </div>
 
@@ -813,12 +603,9 @@
                 <i class="icon-1 fal fa-long-arrow-up"></i>
             </div>
         </div>
-        <!-- back-to-top-button-end -->
 
-        <!-- overly -->
         <div class="offcanvas-overlay"></div>
 
-		<!-- all-JS-link-here -->
         <script src="assets/js/jquery-3.7.1.min.js"></script>
         <script src="assets/js/bootstrap.bundle.min.js"></script>
         <script src="assets/js/swiper-bundle.min.js"></script>
@@ -837,5 +624,117 @@
         <script src="assets/js/magnific-popup.min.js"></script>
         <script src="assets/js/appear.min.js"></script>
         <script src="assets/js/main.js"></script>
+
+        <script>
+            document.addEventListener('DOMContentLoaded', function() {
+                const form = document.getElementById('gameProjectForm');
+                
+                form.addEventListener('submit', function(event) {
+                    event.preventDefault();
+                    
+                    if (!form.checkValidity()) {
+                        event.stopPropagation();
+                     
+                        form.classList.add('was-validated');
+                        
+                        
+                        const firstInvalid = form.querySelector(':invalid');
+                        if (firstInvalid) {
+                            firstInvalid.focus();
+                        }
+                        return;
+                    }
+                    
+                    const modal = new bootstrap.Modal(document.getElementById('costModal'));
+                    modal.show();
+                    
+                    form.reset();
+                    form.classList.remove('was-validated');
+                });
+
+                const phoneInput = document.getElementById('phone');
+                phoneInput.addEventListener('input', function(e) {
+                    if (value.length > 0 && !value.startsWith('+')) {
+                        value = '+' + value;
+                    }
+                    e.target.value = value;
+                });
+
+             
+                const emailInput = document.getElementById('email');
+                emailInput.addEventListener('input', function(e) {
+                    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+                    if (emailRegex.test(e.target.value)) {
+                        emailInput.setCustomValidity('');
+                    } else {
+                        emailInput.setCustomValidity('Por favor, ingresa un email válido');
+                    }
+                });
+            });
+        </script>
+
+        <style>
+            .contact-form-2 .form-select {
+                width: 100%;
+                border: none;
+                height: 60px;
+                padding: 0 30px;
+                font-size: 16px;
+                background: var(--white);
+                color: var(--black);
+                font-weight: 500;
+                outline: none;
+                border-radius: 0;
+            }
+
+            .contact-form-2 .invalid-feedback {
+                display: none;
+                margin-top: 5px;
+                font-size: 14px;
+            }
+
+            .contact-form-2.was-validated .form-select:invalid,
+            .contact-form-2.was-validated input:invalid,
+            .contact-form-2.was-validated textarea:invalid {
+                border: 1px solid var(--ultrix-neon-red);
+            }
+
+            .contact-form-2.was-validated .invalid-feedback {
+                display: block;
+            }
+
+            .contact-form-2.was-validated .form-select:valid,
+            .contact-form-2.was-validated input:valid,
+            .contact-form-2.was-validated textarea:valid {
+                border: 1px solid var(--ultrix-neon-blue);
+            }
+
+            /* Стили для фонового изображения в футере */
+            .chy-footer-1-area {
+                position: relative;
+                background-size: cover !important;
+                background-position: center !important;
+                background-repeat: no-repeat !important;
+                background-attachment: fixed !important;
+            }
+
+            .chy-footer-1-area::before {
+                content: '';
+                position: absolute;
+                top: 0;
+                left: 0;
+                right: 0;
+                bottom: 0;
+                
+                z-index: 1;
+            }
+
+            .chy-footer-1-area > * {
+                position: relative;
+                z-index: 2;
+            }
+
+
+        </style>
     </body>
 </html>
